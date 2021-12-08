@@ -57,17 +57,17 @@ int main() {
 		for (j = 1; j <= 10; j++) {
 			Push(&s, j);
 		}
-	printf("Õ»ÖÐÔªËØÎª£º");
+	printf("æ ˆä¸­å…ƒç´ ä¸ºï¼š");
 	StackTraverse(s);
 	int e;
 	Pop(&s, &e);
-	printf("É¾³ýÕ»¶¥ÔªËØºó£¬Õ»ÖÐÔªËØÎª£º");
+	printf("åˆ é™¤æ ˆé¡¶å…ƒç´ åŽï¼Œæ ˆä¸­å…ƒç´ ä¸ºï¼š");
 	StackTraverse(s);
 	GetTop(s, &e);
-	printf("Õ»¶¥ÔªËØÎª£º%d\n", e);
+	printf("æ ˆé¡¶å…ƒç´ ä¸ºï¼š%d\n", e);
 	int length = StackLength(s);
-	printf("Õ»µÄ³¤¶ÈÎª£º%d\n", length);
+	printf("æ ˆçš„é•¿åº¦ä¸ºï¼š%d\n", length);
 	ClearStack(&s);
-	printf("Çå¿ÕÕ»ºó£¬Õ»µÄ³¤¶ÈÎª£º%d", StackLength(s));
+	printf("æ¸…ç©ºæ ˆåŽï¼Œæ ˆçš„é•¿åº¦ä¸ºï¼š%d", StackLength(s));
 	return 0;
 }
